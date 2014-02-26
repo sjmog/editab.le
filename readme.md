@@ -58,7 +58,7 @@ In the User profile, users can cancel existing subscriptions, change passwords, 
 
 When a user hovers over a project, they have the hover bar above with the option to go to the project homepage, to the CMS, or make edits.
 
-If the user chooses to make edits, they are shown all the files in the project. Clicking a file loads it for editing. Under each file is a list of the attributes it draws from <code>SiteContent</code>, which are drawn from the files containing <code>names</code> and <code>values</code> in the same S3 bucket as the edited uploaded files.
+If the user chooses to make edits, they are shown all the files in the project. Clicking a file loads it for editing. Under each file is a list of the attributes it draws from <code>SiteContent</code>, which are drawn from the files containing <code>names</code> and <code>values</code> in the same S3 bucket as the edited uploaded files. The ERB is substituted back to HTML by Node, using the <code>names</code> and <code>values</code> arrays. (Or could the static page not just be fetched from the corresponding page on the Heroku-hosted site, and the element selectors submitted earlier used to mark up editable elements with a special class, and a data-editable-name attribute?)
 
 
 
