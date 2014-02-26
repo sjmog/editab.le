@@ -40,7 +40,7 @@ A unique selector (XPath?) for the text's parent's element is found and sent to 
 
 In the original uploaded HTML file, the element is found and the contents or src replaced by an Embedded Ruby (ERB) Rails model attribute reference, the key of which is the name submitted via AJAX, and the value of which is a string (based off an ActiveRecord text type) of the highlighted text or src also submitted via AJAX. The attribute is also added by Node to an internal array of attribute names, <b>names</b>, and the value to a different array of attribute initial values, <b>values</b>.
 
-Node then evokes a rails generator command, which creates files among which is a model, SiteContent, whose attributes are each of the items in <b>values</b>, and a fixture for SiteContent, whose values are each of the items in <pre>values</pre>.
+Node then evokes a rails generator command, which creates files among which is a model, SiteContent, whose attributes are each of the items in <b>values</b>, and a fixture for SiteContent, whose values are each of the items in <code>values</code>.
 
 
 
